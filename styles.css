@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 body {
-    padding: 10px;
+    padding: 5px;
     background-color: #000014;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
 }
 
 h1 {
@@ -13,19 +14,20 @@ h1 {
     margin-bottom: 20px;
     color: rgba(255, 217, 0, 0.61);
     font-family: 'Croissant One', cursive;
+    font-size: 5vw;
 }
 
 .code-beautifier {
     font-family: Arial, sans-serif;
     color: whitesmoke;
-    margin: auto;
     width: 90%;
     height: auto;
     margin-top: 40px;
     background-color: #00006e;
-    padding: 50px 20px 50px 20px;
+    padding: 15px 10px 15px 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px #1b37b4;
+    margin: 0;
 }
 
 .beautifier-body {
@@ -36,57 +38,65 @@ h1 {
 
 #input-code {
     width: 90%;
-    border-radius:10px;
-    height: 100vh;
+    border-radius: 10px;
+    height: 60vh;
 }
 
 textarea {
-    background-color:#191930;
-    border:1px solid #1e1e50;
+    background-color: #191930;
+    border: 1px solid #1e1e50;
     padding: 10px;
     color: #01bcf5;
 }
+
 .buttons {
     margin-bottom: 10px;
 }
 
 button {
-    border-radius:5px;
-    background-color:#000014;
-    border:1px solid #2e3e837e;
+    border-radius: 5px;
+    background-color: #000014;
+    border: 1px solid #2e3e837e;
     padding: 10px;
-    color:rgb(182, 210, 247);font-weight: bold;
+    color: rgb(182, 210, 247);
+    font-weight: bold;
 }
 
 button:hover {
-    background-color:#c99f1367;
+    background-color: #c99f1367;
 }
 
 ::-webkit-scrollbar {
     width: 2px;
-  }
-  
+}
+
 
 /* Style the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-    background: #3551f185; /* Color of the scrollbar thumb */
-    border-radius: 3px; /* Rounded corners of the thumb */
-  }
-  
-  /* Style the scrollbar track when hovering over it */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+    background: #3551f185;
+    /* Color of the scrollbar thumb */
+    border-radius: 3px;
+    /* Rounded corners of the thumb */
+}
 
-@media only screen and (min-width: 1024px){
+/* Style the scrollbar track when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media only screen and (min-width: 1024px) {
     .code-beautifier {
+        margin: auto;
         min-width: 500px;
         width: 60%;
         padding: 30px 20px 50px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
     #input-code {
         height: 400px;
     }
 }
-
